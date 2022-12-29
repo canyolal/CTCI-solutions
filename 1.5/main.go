@@ -15,6 +15,7 @@ func main() {
 
 }
 
+// O(n)
 func f(s1, s2 string) bool {
 	s1len := len(s1)
 	s2len := len(s2)
