@@ -11,10 +11,11 @@ func main() {
 	fmt.Println(f("waterbottle", "erbottlewat"))
 }
 
+// s2 is a rotated substr version of s1
 func f(s1, s2 string) bool {
-	subStr := s2 + s2 // since it is rotations it becomes 2 repeating substr
+	s2 = s2 + s2 // since it is rotations it becomes 2 repeating substr
 
-	if strings.Contains(subStr, s1) {
+	if strings.Contains(s2, s1) {
 		return true
 	}
 
