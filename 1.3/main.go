@@ -10,7 +10,7 @@ func main() {
 	fmt.Println(f("selami sahin and his team   ", 25))
 }
 
-// by string concatenation
+// by string concatenation and no additional space O(n)
 func f(s string, l int) string {
 	i := 0
 	for i < len(s) || l > 0 {
