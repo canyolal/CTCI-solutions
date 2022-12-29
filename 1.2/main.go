@@ -19,7 +19,7 @@ func f(s1 string, s2 string) bool {
 		runeMap1[s1[i]]++
 		runeMap2[s2[i]]++
 	}
-	for k, _ := range runeMap1 {
+	for k := range runeMap1 {
 		if runeMap1[k] != runeMap2[k] {
 			return false
 		}
